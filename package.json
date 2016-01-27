@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-exercises",
+  "version": "1.0.0",
+  "description": "Collection of Node.js exercises",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/razvanz/nodejs-exercises.git"
+  },
+  "author": "Razvan Laurus <razvan.laurus@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/razvanz/nodejs-exercises#readme",
+  "dependencies": {
+    "gcd": "0.0.1"
+  }
+}
