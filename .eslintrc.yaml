@@ -276,7 +276,7 @@ rules:
   no-var:
     - 1
   object-shorthand:
-    - 1
+    - 0
     - properties
   prefer-arrow-callback:
     - 1

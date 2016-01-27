@@ -7,6 +7,7 @@ const compress = require('compression');
 const consolidate = require('consolidate');
 const cookieParser = require('cookie-parser');
 const express = require('express');
+const http = require('http');
 const methodOverride = require('method-override');
 const morgan = require('morgan');
 const path = require('path');
@@ -32,8 +33,7 @@ app.use((req, res, next) => {
   next();
 });
 
-if (config.log)
-  app.use(morgan('dev'));
+app.use(morgan('dev'));
 
 // Should be placed before express.static
 app.use(compress({
@@ -91,7 +91,9 @@ app.use((req, res) => {
       });
 });
 
-app.listen(config.port, config.host, (e) => {
+const httpServer = new http.Server(app);
+
+httpServer.listen(config.port, config.host, (e) => {
   if (e)
     throw e;
 
