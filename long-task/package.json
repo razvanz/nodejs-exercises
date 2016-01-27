@@ -1,0 +1,34 @@
+{
+  "name": "@sharkcell/web-server",
+  "version": "1.0.0",
+  "description": "A web server example",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "^1.14.1",
+    "chalk": "^1.1.1",
+    "compression": "^1.6.0",
+    "consolidate": "^0.13.1",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "glob": "^5.0.15",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "socket.io": "^1.4.5",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-less": "^3.0.3",
+    "main-bower-files": "^2.9.0"
+  },
+  "scripts": {
+    "prestart": "gulp build",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Razvan Laurus <ravan@sharkcell.dk>",
+  "license": ""
+}
